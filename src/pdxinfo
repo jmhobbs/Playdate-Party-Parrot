@@ -4,4 +4,4 @@ description=PARTY ON
 bundleID=org.velvetcache.playdate.party-parrot
 version=1.0.0
 imagePath=support/card.png
-buildNumber=11
+buildNumber=12
