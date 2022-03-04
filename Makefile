@@ -1,6 +1,5 @@
-build: increment_build
+build:
 	pdc src/ PartyParrot.pdx
 
-increment_build:
-	bash hack/increment-build.sh
-	
+release:
+	bash hack/release.sh
