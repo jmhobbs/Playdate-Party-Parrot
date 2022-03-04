@@ -1,0 +1,7 @@
+name=Party Parrot
+author=John Hobbs
+description=PARTY ON
+bundleID=org.velvetcache.playdate.party-parrot
+version=1.0
+imagePath=support/card.png
+buildNumber=6
