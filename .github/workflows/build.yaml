@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build the project
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jmhobbs/playdate-compiler-action@v1
+        with:
+          path: 'src'
+          output: 'PlayDateParrot.pdx'
+          strip: true
+          compress: true
+          package: true
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Archive
+          path: PlayDateParrot.pdx.tar.gz
