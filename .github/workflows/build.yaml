@@ -6,6 +6,8 @@ jobs:
     name: Build the project
     steps:
       - uses: actions/checkout@v2
+        with:
+          lfs: true
       - uses: jmhobbs/playdate-compiler-action@v1
         with:
           path: 'src'
